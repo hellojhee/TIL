@@ -53,7 +53,3 @@ $ git log --oneline
   - 깃 초기화 전에 작성해주는게 좋아요
 
 
-
-`git clone <URL>` : 다른 컴퓨터에서도 쓰려면
-
-`git pull <name> master` : 새로운 커밋을 push했을때 가져오는법
