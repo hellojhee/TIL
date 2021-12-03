@@ -41,6 +41,10 @@ $ git log --oneline
   ```sh
   $ git clone <URL>
   ```
+- 원격 저장소의 내용 받아오기
+  ```sh
+  $ git pull origin master
+  ```
 
 
 - 모든 프로젝트는 기본으로 `README.md` 와 `.gitignore`은 무조건 있어야함
