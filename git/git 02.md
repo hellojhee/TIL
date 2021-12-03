@@ -37,6 +37,14 @@ $ git log --oneline
 
 - 비어있는 폴더는 커밋해도 안올라감, 없는걸로 생각..
 
+- 새로운 컴퓨터에서 기존 원격 저장소 복제하기
+  ```sh
+  $ git clone <URL>
+  ```
+- 원격 저장소의 내용 받아오기
+  ```sh
+  $ git pull origin master
+  ```
 
 
 - 모든 프로젝트는 기본으로 `README.md` 와 `.gitignore`은 무조건 있어야함
