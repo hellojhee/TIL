@@ -43,3 +43,9 @@ $ git log --oneline
   - `.gitignore` : 이 프로젝트에서 제외할 파일이 있을때, 무시할 파일명을 ignore에 추가하면 됨
   - 구글에 gitignore 검색해서 쓰고있는 프로그램을 추가하면 무시할 파일들을 알려줌, 모두 복사에서 `.gitignore`에 붙여넣기
   - 깃 초기화 전에 작성해주는게 좋아요
+
+
+
+`git clone <URL>` : 다른 컴퓨터에서도 쓰려면
+
+`git pull <name> master` : 새로운 커밋을 push했을때 가져오는법
