@@ -102,11 +102,17 @@ git log
 
 ### github
 
-1. 깃허브에 매칭되는 리포를 만들고
+1. 깃허브에 매칭되는 리포를 만들고 (생성된 주소 복사하기)
 
 2. 내컴퓨터의 리포 폴더를 동기화
 
 3. 가지고있는 커밋을 깃허브에 옮기기
+   
+`git remote add <name> <URL>` : add까지는 고정값, name부터는 고정값이 아니고 딕셔너리로 생각 {origin : <URL>}
+
+`git remote remove <name>` : <name> 값 삭제
+
+`git push <name> master` : push까지는 고정값
 
 
 
