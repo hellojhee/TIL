@@ -181,3 +181,30 @@ for j in range(2, n+1):
   print(' ' * (n - j) + '*' * ((2 * j) - 1))
 
 
+# 백준 10818
+# 최솟값과 최댓값을 구하는 프로그램을 작성
+n = int(input())
+num = list(map(int, input().split()))
+mini = num[0]
+maxi = num[0]
+for i in range(n):
+  if num[i] < mini:
+    mini = num[i]
+  elif num[i] > maxi:
+    maxi = num[i]
+print(mini, maxi, sep=' ')
+
+
+# 백준 2577
+# 숫자의 개수
+a = int(input())
+b = int(input())
+c = int(input())
+xxx = list(map(int, str(a * b * c)))  # 문자열을 숫자로 map()
+xlist = [0]*10
+for i in range(len(xxx)):
+  xlist[xxx[i]] += 1
+for j in range(len(xlist)):
+  print(xlist[j])
+
+
