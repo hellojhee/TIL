@@ -342,3 +342,38 @@ while True:
     break
 
 
+# 6092
+# 이상한 출석 번호
+# 첫 번째 줄에 출석 번호를 부른 횟수인 정수 n이 입력된다. (1 ~ 10000)
+# 두 번째 줄에는 무작위로 부른 n개의 번호(1 ~ 23)가 공백을 두고 순서대로 입력된다.
+
+n = int(input())
+num = list(map(int, input().split()))  # 출석번호 저장할 리스트
+checklist = [0] * 24  # 빈 리스트에 각 번호가 몇번씩 불렸는지 저장
+for i in range(n):
+  checklist[num[i]] += 1  # num[0]=1이라면, checklist[1]자리에 숫자+1
+for j in range(1, len(checklist)):
+  print(checklist[j], sep=' ')
+
+
+# 6093
+# 출석을 부른 번호 순서를 바꾸어 공백을 두고 출력한다.
+
+n = int(input())
+num = list(map(int, input().split()))
+for i in range(n-1, -1, -1):
+  print(num[i], end=' ')
+
+
+# 6094
+# 출석을 부른 번호 중에 가장 빠른 번호를 출력한다.
+
+n = int(input())
+num = list(map(int, input().split()))
+mini = num[0]
+for i in range(n):
+    if num[i] < mini:
+        mini = num[i]
+print(mini)
+
+
