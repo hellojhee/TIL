@@ -153,9 +153,17 @@ while True:
 # 1만큼씩 줄이면서 한 줄에 1개씩 카운트다운 수를 출력한다.
 n = int(input())
 while True:
+  print(n)
+  n -= 1
   if n == 0:
     break
-  print(n)
+
+n = int(input())
+while True:
+  if n != 0:
+    print(n)
+  else:
+    break
   n -= 1
 
 # 6073
@@ -163,10 +171,9 @@ while True:
 n = int(input())
 while True:
   n -= 1
-  if n == 0:
-    print(n)
-    break
   print(n)
+  if n == 0:
+    break
 
 # 6074
 # a부터 입력한 문자까지 순서대로 공백을 두고 한 줄로 출력한다.
