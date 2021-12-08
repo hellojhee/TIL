@@ -231,3 +231,58 @@ for i in range(1, 10):
 print(maxi, whmaxi, sep='\n')
 
 
+## 별찍기 2차원 리스트로
+
+# 1
+n = int(input())
+a = [[' '] * n for _ in range(n)]
+
+for i in range(n):
+    for j in range(i+1):
+        #print('a[{}][{}]'.format(i, j))
+        a[i][j] = '*'
+for i in range(n):
+    for j in range(n):
+        print(a[i][j], end='')
+    print()
+
+
+# 2
+n = int(input())
+a = [[' '] * n for _ in range(n)]
+
+for i in range(n):
+    for j in range(n-1, n-i-2, -1):
+        a[i][j] = '*'
+for i in range(n):
+    for j in range(n):
+        print(a[i][j], end='')
+    print()
+
+
+# 3
+n = int(input())
+a = [[' '] * n for _ in range(n)]
+
+for i in range(n):
+    for j in range(n-i):
+        a[i][j] = '*'
+for i in range(n):
+    for j in range(n):
+        print(a[i][j], end='')
+    print()
+
+
+# 4
+n = int(input())
+a = [[' '] * n for _ in range(n)]
+
+for i in range(n):
+    for j in range(i, n):
+        a[i][j] = '*'
+for i in range(n):
+    for j in range(n):
+        print(a[i][j], end='')
+    print()
+
+
