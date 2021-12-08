@@ -208,3 +208,26 @@ for j in range(len(xlist)):
   print(xlist[j])
 
 
+# 3052
+# 나머지를 계산하고 나머지가 다른 숫자의 개수
+ans = [0] * 42
+for i in range(10):
+  a = int(input())
+  b = a % 42
+  ans[b] = 1
+print(sum(ans))
+
+
+# 2562
+# 최댓값과 최댓값의 위치 
+
+maxi = 0  # 최댓값
+whmaxi = 0 # 최댓값 위치
+for i in range(1, 10):
+  n = int(input())
+  if maxi < n:
+    maxi = n
+    whmaxi = i
+print(maxi, whmaxi, sep='\n')
+
+

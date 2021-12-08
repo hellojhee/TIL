@@ -377,3 +377,46 @@ for i in range(n):
 print(mini)
 
 
+# 6095
+# 바둑판에 흰 돌 놓기
+arr2D = [[0]*19 for _ in range(19)]
+n = int(input())
+for _ in range(n):
+    i, j = map(int, input().split())
+    arr2D[i-1][j-1] = 1
+
+for row in arr2D:
+    for col in row:
+        print(col, end=' ')
+    print()
+
+
+# 6096
+# 바둑알 십자 뒤집기
+
+a = [list(map(int, input().split())) for _ in range(19)]
+n = int(input())
+
+for k in range(n):
+  x, y = map(int, input().split())
+
+  for i in range(19):
+    if i != y-1:  # 좌표의 값은 바뀌면 안됨, 근데 이거 안해도 다시 바뀌니까 상관없을걸
+      if a[x-1][i] == 1:  # 10행의 0열, 10행의 1열, ...
+        a[x-1][i] = 0
+      elif a[x-1][i] == 0:
+        a[x-1][i] = 1
+
+  for j in range(19):
+    if j != x-1: 
+      if a[j][y-1] == 1:  #0행의 10열, 1행의 10열, ...
+        a[j][y-1] = 0
+      elif a[j][y-1] == 0:
+        a[j][y-1] = 1
+
+for i in range(19):
+  for j in range(19):
+    print(a[i][j], end=' ')
+  print()
+
+
